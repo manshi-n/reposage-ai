@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Signature element: the "diff gutter" bar used on cards, issue rows, and
+   score bars throughout the app - a nod to the colored +/- bars in a git
+   diff view, since this whole product lives in that mental model. */
+.diff-gutter {
+  position: relative;
+  padding-left: 14px;
+}
+.diff-gutter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--gutter-color, theme("colors.mist.400"));
+}
+
+.gutter-critical { --gutter-color: theme("colors.signal.rose"); }
+.gutter-high { --gutter-color: theme("colors.signal.amber"); }
+.gutter-medium { --gutter-color: theme("colors.signal.violet"); }
+.gutter-low { --gutter-color: theme("colors.signal.teal"); }
+
+::selection {
+  background: theme("colors.signal.amber");
+  color: theme("colors.ink.950");
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme("colors.ink.600") transparent;
+}

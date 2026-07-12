@@ -1,0 +1,41 @@
+# Secrets
+.env
+*.env
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Python virtual environments
+venv/
+.venv/
+backend/venv/
+**/venv/
+**/.venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node
+node_modules/
+**/node_modules/
+dist/
+build/
+
+# Local databases and generated data
+*.db
+*.sqlite
+*.sqlite3
+backend/data/
+data/
+.chroma/
+
+# Logs and IDE files
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
