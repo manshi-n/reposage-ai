@@ -2,7 +2,7 @@
 
 AI-powered GitHub repository analysis platform that combines static analysis with LLM-powered code review to identify security vulnerabilities, performance issues, code quality problems, architecture insights, documentation, automated test generation, repository chat, and AI-generated pull requests.
 
-Developed by **Manshi Negi**
+Developed by **Manshi **
 
 GitHub: https://github.com/manshi-n
 
